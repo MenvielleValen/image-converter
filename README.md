@@ -29,7 +29,7 @@ Image Converter is a web application that allows users to convert images from on
 2. Navigate to the project directory:
 
    ```bash
-   cd drawing-canvas-app
+   cd image-converter
 
 3. Install dependencies:
 
