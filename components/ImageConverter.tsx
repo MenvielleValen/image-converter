@@ -28,12 +28,10 @@ interface IItemFile {
 }
 
 const ImageConverter = () => {
-  const searchParams = useSearchParams();
-
   const [selectedFiles, setSelectedFiles] = useState<IItemFile[]>([]);
   const [config, setConfig] = useState({
-    from: searchParams.get("from") || "jpg",
-    to: searchParams.get("to") || "png",
+    from: "jpg",
+    to: "png",
   });
 
   const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
