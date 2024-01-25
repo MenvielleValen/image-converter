@@ -1,0 +1,100 @@
+.fileInputContainer {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Estilizar el botón */
+.fileInputButton {
+  border: 2px solid #3498db;
+  color: #3498db;
+  background-color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Ocultar el input real */
+.fileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fileList {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #333;
+  min-height: 500px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.fileList li {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  align-items: center;
+  padding: 16px;
+  gap: 5px;
+}
+
+.fileList .fileName {
+  width: 200px;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que desborda el contenedor */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto recortado */
+}
+
+.error{
+    background-color: rgb(223, 89, 89) !important;
+    color: #fff !important;
+    border-color: rgb(223, 89, 89) !important;
+    opacity: 0.7;
+}
+
+.finished{
+    background-color: rgb(100, 187, 100);
+    color: #fff;
+    border-color: rgb(100, 187, 100);
+}
+
+.deleteButton{
+    min-width: 20px !important;
+    background-color: rgb(223, 89, 89) !important;
+    color: #fff !important;
+    border: none;
+
+}
+
+.loader {
+  width: 28px;
+  height: 28px;
+  border-width: 3px;
+  border-style: dashed solid solid dotted;
+  border-color: #3498db #3498db transparent #3498db;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

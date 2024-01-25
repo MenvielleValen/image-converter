@@ -105,3 +105,37 @@ a {
     color-scheme: dark;
   }
 }
+
+select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button{
+  padding: 14px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  color: #3498db;
+  background-color: #fff;
+  transition: 0.2s;
+  height: 40px;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover{
+  color: #fff;
+  background-color: #3498db;
+  cursor: pointer;
+}
+
+/* Estilos específicos para el botón deshabilitado */
+button:disabled {
+  background-color: #e7e6e6;
+  color: #666666;
+  cursor: not-allowed;
+  /* Agrega estilos adicionales según sea necesario */
+}
