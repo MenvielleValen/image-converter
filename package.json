@@ -1,6 +1,7 @@
 {
-  "name": "my-image-converter",
+  "name": "image-converter",
   "version": "0.1.0",
+  "author": "Valentin Menvielle Candia",
   "private": true,
   "scripts": {
     "dev": "next dev",

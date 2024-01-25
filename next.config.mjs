@@ -8,7 +8,7 @@ const nextConfig = {
                 headers: [
                   {
                     key: "Access-Control-Allow-Origin",
-                    value: "https://test.com",
+                    value: "https://image-converter-menviellevalen.vercel.app/",
                   },
                   {
                     key: "Access-Control-Allow-Methods",
